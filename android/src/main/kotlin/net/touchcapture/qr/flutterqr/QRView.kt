@@ -213,7 +213,7 @@ class QRView(private val context: Context, messenger: BinaryMessenger, private v
                 allowedBarcodeTypes.add(BarcodeFormat.values()[it])
             }
         } catch (e: Exception) {
-            result.error("", e.message, null)
+            result.error("", e.message, null) 
         }
 
         barcodeView?.decodeContinuous(
